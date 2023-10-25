@@ -9,6 +9,8 @@ function RowEdit({
   setEditedUserData,
   editedUserData,
   handleSave,
+  allChecked,
+  handleOneChecked,
 }) {
   return (
     <tr

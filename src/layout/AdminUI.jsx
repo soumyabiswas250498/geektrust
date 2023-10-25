@@ -47,7 +47,6 @@ function AdminUI() {
   const currentPageUsers = filteredUsers.slice(firstIndex, lastIndex);
 
   const handlePagination = pageSelect => {
-    console.log(pageSelect);
     if (pageSelect < 1) pageSelect = 1;
     let totalPagesLength = filteredUsers.length / rowsOnePage;
     if (pageSelect > Math.ceil(totalPagesLength)) {
@@ -75,7 +74,6 @@ function AdminUI() {
 
   // Edit Logic
   const handleEdit = userId => {
-    console.log(userId);
     setEditUserId(userId);
     if (userId) {
       const userToEdit = filteredUsers.find(user => user.id === userId);

@@ -15,7 +15,6 @@ function Table({
   handleAllChecked,
   pageAllChecked,
 }) {
-  console.log(pageAllChecked);
   return (
     <div className="w-full h-min-[450px] md:p-2">
       <table className="table-auto w-full text-yellow-50">
@@ -50,6 +49,8 @@ function Table({
                 setEditedUserData={setEditedUserData}
                 editedUserData={editedUserData}
                 handleSave={handleSave}
+                allChecked={allChecked}
+                handleOneChecked={handleOneChecked}
                 key={user.id}
               />
             ) : (

@@ -9,7 +9,6 @@ function Pagination({ allUsers, rowsOnePage, currentPage, handlePagination }) {
   const isFirstPage = currentPage === 1;
   const isLastPage = currentPage === totalPages;
 
-  console.log(currentPage);
   return (
     <div className="w-full flex justify-center">
       <div className="flex justify-evenly items-center h-18 text-yellow-50">
