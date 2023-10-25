@@ -37,6 +37,7 @@ function AdminUI() {
     }
   };
   useEffect(() => {
+    document.title = 'AdminUI';
     fetchData();
   }, []);
 
@@ -174,6 +175,9 @@ function AdminUI() {
 
   return (
     <div className="bg-slate-800 h-screen w-screen overflow-x-hidden ">
+      <div className="w-full my-4 flex justify-center items-center text-white">
+        <h2 className="text-xl">AdminUI</h2>
+      </div>
       {loading ? (
         <div>Loading</div>
       ) : (
