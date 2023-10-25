@@ -1,10 +1,6 @@
 import React from 'react';
-export default function Pagination({
-  allUsers,
-  rowsOnePage,
-  currentPage,
-  handlePagination,
-}) {
+
+function Pagination({ allUsers, rowsOnePage, currentPage, handlePagination }) {
   const pageNumbers = [];
   const totalPages = Math.ceil(allUsers / rowsOnePage);
   for (let pageButton = 0; pageButton < totalPages; pageButton++) {
@@ -12,6 +8,8 @@ export default function Pagination({
   }
   const isFirstPage = currentPage === 1;
   const isLastPage = currentPage === totalPages;
+
+  console.log(currentPage);
   return (
     <div className="w-full flex justify-center">
       <div className="flex justify-evenly items-center h-18 text-yellow-50">
@@ -65,3 +63,5 @@ export default function Pagination({
     </div>
   );
 }
+
+export default Pagination;
